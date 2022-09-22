@@ -32,7 +32,19 @@ namespace FinalHomework
            
          
         }    
-           
+          Console.WriteLine("Введите количество строк");
+            int StrNum = int.Parse(Console.ReadLine());
+            string[] strings = new string[StrNum];
+            for (int i = 0; i < StrNum; i++)
+            {
+                Console.WriteLine("Введите элемент "+i);
+                strings[i] = Console.ReadLine();
+
+            }
+          Console.WriteLine();
+          Changestr(strings);
+          Console.ReadLine();
+            
         }
     }
 }
